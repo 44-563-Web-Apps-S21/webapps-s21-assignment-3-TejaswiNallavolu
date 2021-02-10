@@ -1,80 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Welcome to my page</title>
+  <title>Welcome to my page</title>
 </head>
+
 <body>
 
-<h1>Tejaswi Reddy Nallavolu</h1>
+  <h1>Tejaswi Reddy Nallavolu</h1>
 
 
-<h2>Hang out with family</h2>
+  <h2>Hang out with family</h2>
 
-<p>Spending time with family is always one of my most favourite actvities.It helps me experience better emotional <b>well-being</b> and boosts my <b>self confidence.</b></p>
+  <p>Spending time with family is always one of my most favourite actvities.It helps me experience better emotional
+    <b>well-being</b> and boosts my <b>self confidence.</b></p>
 
-<hr>
+  <hr>
 
-<h2>My Stress buster</h2>
+  <h2>My Stress buster</h2>
 
-<ol>
-  <li>Making Green Tea</li>
-  <ul>
-    <li>Green Tea bag</li>
-    <li>Cup of water</li>
-  </ul>
-  <li>Prepration</li>
+  <ol>
+    <li>Making Green Tea</li>
+    <ul>
+      <li>Green Tea bag</li>
+      <li>Cup of water</li>
+    </ul>
+    <li>Prepration</li>
     <ol>
-      <li>Boil the drinking water and allow to cool slightly for 2-3 mins, this slightly cooler water will get the best out of your delicate tea leaves.</li>
+      <li>Boil the drinking water and allow to cool slightly for 2-3 mins, this slightly cooler water will get the best
+        out of your delicate tea leaves.</li>
       <li>Pour the water onto the teabag to release its delicious aroma.</li>
       <li>Leave the teabag to infuse for up to 2 minutes.</li>
       <li>Remove the teabag and our deliciously refreshing Green Tea is ready to serve.</li>
     </ol>
-</ol>
+  </ol>
 
-<a href="file:///C:/Users/S542271/OneDrive%20-%20nwmissouri.edu/Desktop/WA-assignment2/webapps-s21-assignment-3-TejaswiNallavolu/aboutme.html">aboutme link</a>
+  <a href="aboutme.html">click here to view my profile</a>
 
-<hr>
+  <hr>
 
-<h2>Top 5 Tourist Destinations in India</h2>
-<p>Below are list of places one shouldnt miss when in India</p>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-</head>
-<body>
+  <h2>Top 5 Tourist Destinations in India</h2>
+  <p>Below are list of places one shouldnt miss when in India</p>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  
 
-<table style="width:50%">
-  <tr>
-    <th>Location</th>
-    <th>No. of Hours to Visit</th> 
-    <th>Expenditure</th>
-  </tr>
-  <tr>
-    <td>Golconda Fort</td>
-    <td>4</td>
-    <td>500$</td>
-  </tr>
-  <tr>
-    <td>Mysore Palace</td>
-    <td>3</td>
-    <td>200$</td>
-  </tr>
-  <tr>
-    <td>Taj Mahal</td>
-    <td>4</td>
-    <td>250$</td>
-  </tr>
-    <tr>
-    <td>Sakkarbaug Zoo park</td>
-    <td>8</td>
-    <td>800$</td>
-  </tr>
-</table>
-</body>
-</html>
+  
 
-</body>
-</html>
+    <table style="width:50%">
+      <tr>
+        <th>Location</th>
+        <th>No. of Hours to Visit</th>
+        <th>Expenditure</th>
+      </tr>
+      <tr>
+        <td>Golconda Fort</td>
+        <td>4</td>
+        <td>500$</td>
+      </tr>
+      <tr>
+        <td>Mysore Palace</td>
+        <td>3</td>
+        <td>200$</td>
+      </tr>
+      <tr>
+        <td>Taj Mahal</td>
+        <td>4</td>
+        <td>250$</td>
+      </tr>
+      <tr>
+        <td>Sakkarbaug Zoo park</td>
+        <td>8</td>
+        <td>800$</td>
+      </tr>
+    </table>
+    <hr>
+    <h3>introduction to Unix Shell</h3>
+    <p>In Unix, the shell is a program that interprets commands and acts as an intermediary between the user and the inner
+      workings of the operating system. A shell hides the details of the underlying operating system and manages the
+      technical details of the operating system kernel interface, which is the lowest-level, or "inner-most" component of
+      most operating systems.</p>
+    <a href="https://en.wikipedia.org/wiki/Unix_shell">reference 1</a><br>
+    <a href="https://kb.iu.edu/d/agvf">reference 2</a>
+    
+   
+    <pre># sendEmail Function - mail & exit.
+      START=$(date +%s)
+      sendEmail() {
+        scripttime=0;
+        END=$(date +%s)
+        DIFF=$(( $END - $START ))
+        if [ $DIFF -le 60 ]; then
+          scripttime="$DIFF seconds.";
+        else
+          DIFF=$(( $DIFF / 60 ))
+          scripttime="$DIFF minutes.";
+        fi;
+        content="$content. Exec Time: $scripttime"
+        echo $content | mail -s "$subject" $email_list
+        exit;
+      }
+      # sendEmail Function - end.</pre>
+    </body>
+    
+    </html>
